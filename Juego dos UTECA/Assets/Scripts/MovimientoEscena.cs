@@ -1,12 +1,49 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 
 public class MovimientoEscena : MonoBehaviour
 {
-    public void SiguienteEscena()
+    private int currentWall;
+    private int previousWall;
+
+    public int CurrentWall
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        get { return currentWall; }
+        set
+        {
+            if (value == 5)
+            {
+                currentWall = 1;
+            }
+            else if (value == 0)
+            {
+                currentWall = 4;
+            }
+            else
+            {
+                currentWall = value;
+            }
+
+        }
     }
+
+    private void Start()
+    {
+        previousWall = 0;
+        currentWall = 1;
+    }
+
+    private void Update()
+    {
+        if(currentWall != previousWall)
+        {
+            GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Sprites" + currentWall.ToString());
+        }
+
+        previousWall = currentWall;
+    }
+
+
 }

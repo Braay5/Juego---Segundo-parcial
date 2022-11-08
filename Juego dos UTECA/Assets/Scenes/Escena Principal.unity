@@ -295,6 +295,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1175657153}
   - component: {fileID: 1175657152}
+  - component: {fileID: 1175657154}
   m_Layer: 0
   m_Name: Fondo
   m_TagString: Untagged
@@ -367,6 +368,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1175657154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175657151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9bbad36744e49a4d8dae96946583fe5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1289593821
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,7 +416,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 463, y: -242}
+  m_AnchoredPosition: {x: 383, y: -216}
   m_SizeDelta: {x: 113.18, y: 93.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1289593823
@@ -429,8 +442,8 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 1, g: 0.4669811, b: 0.4669811, a: 1}
+    m_SelectedColor: {r: 0.4056604, g: 0, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -449,7 +462,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1289593824}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1571283273}
+        m_TargetAssemblyTypeName: "Bot\xF3nManipulador, Assembly-CSharp"
+        m_MethodName: TeclaDerecha
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1289593824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -566,6 +591,7 @@ GameObject:
   - component: {fileID: 1571283271}
   - component: {fileID: 1571283270}
   - component: {fileID: 1571283269}
+  - component: {fileID: 1571283273}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -655,6 +681,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1571283273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571283268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9bbad36744e49a4d8dae96946583fe5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1645133579
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,6 +784,7 @@ GameObject:
   - component: {fileID: 2073197574}
   - component: {fileID: 2073197573}
   - component: {fileID: 2073197572}
+  - component: {fileID: 2073197575}
   m_Layer: 5
   m_Name: "Bot\xF3n Izq"
   m_TagString: Untagged
@@ -770,7 +809,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -468, y: -242}
+  m_AnchoredPosition: {x: -382, y: -217}
   m_SizeDelta: {x: 113.18, y: 93.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2073197572
@@ -796,8 +835,8 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.7169812, g: 0.34158066, b: 0.34158066, a: 1}
+    m_SelectedColor: {r: 0.3301887, g: 0, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -816,7 +855,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2073197573}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1571283273}
+        m_TargetAssemblyTypeName: "Bot\xF3nManipulador, Assembly-CSharp"
+        m_MethodName: TeclaIzquierda
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2073197573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -855,3 +906,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2073197570}
   m_CullTransparentMesh: 1
+--- !u!114 &2073197575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073197570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f188b629a7ab4d24bb0fe40fd675f74c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
