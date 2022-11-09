@@ -380,6 +380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9bbad36744e49a4d8dae96946583fe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentDisplay: {fileID: 0}
 --- !u!1 &1289593821
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,8 +465,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1571283273}
-        m_TargetAssemblyTypeName: "Bot\xF3nManipulador, Assembly-CSharp"
-        m_MethodName: TeclaDerecha
+        m_TargetAssemblyTypeName: CambioEscena, Assembly-CSharp
+        m_MethodName: derecha
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -690,7 +691,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1571283268}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9bbad36744e49a4d8dae96946583fe5, type: 3}
+  m_Script: {fileID: 11500000, guid: 46222f617dd7e8440b8007b650cf50f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1645133579
@@ -784,7 +785,6 @@ GameObject:
   - component: {fileID: 2073197574}
   - component: {fileID: 2073197573}
   - component: {fileID: 2073197572}
-  - component: {fileID: 2073197575}
   m_Layer: 5
   m_Name: "Bot\xF3n Izq"
   m_TagString: Untagged
@@ -809,7 +809,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -382, y: -217}
+  m_AnchoredPosition: {x: -526, y: -217}
   m_SizeDelta: {x: 113.18, y: 93.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2073197572
@@ -857,8 +857,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1571283273}
-        m_TargetAssemblyTypeName: "Bot\xF3nManipulador, Assembly-CSharp"
-        m_MethodName: TeclaIzquierda
+        m_TargetAssemblyTypeName: CambioEscena, Assembly-CSharp
+        m_MethodName: izquierda
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -906,15 +906,3 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2073197570}
   m_CullTransparentMesh: 1
---- !u!114 &2073197575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2073197570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f188b629a7ab4d24bb0fe40fd675f74c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

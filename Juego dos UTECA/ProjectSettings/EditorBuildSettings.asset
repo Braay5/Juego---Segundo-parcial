@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Escena Principal.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Escena dos.unity
+    guid: bd280fb888316c242bf2f5e8ecb31a34
+  - enabled: 1
+    path: Assets/Scenes/Escena tres.unity
+    guid: 00fff262a5f25ed4cbdb0404d6807713
   m_configObjects: {}
