@@ -296,6 +296,7 @@ GameObject:
   - component: {fileID: 1175657153}
   - component: {fileID: 1175657152}
   - component: {fileID: 1175657154}
+  - component: {fileID: 1175657155}
   m_Layer: 0
   m_Name: Fondo
   m_TagString: Untagged
@@ -380,7 +381,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9bbad36744e49a4d8dae96946583fe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentDisplay: {fileID: 0}
+--- !u!114 &1175657155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175657151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a9bd253014e1540b82295d50dc599f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VelocidaddeZoom: 0.1
 --- !u!1 &1289593821
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,6 +606,7 @@ GameObject:
   - component: {fileID: 1571283270}
   - component: {fileID: 1571283269}
   - component: {fileID: 1571283273}
+  - component: {fileID: 1571283274}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -694,6 +708,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46222f617dd7e8440b8007b650cf50f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1571283274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571283268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a9bd253014e1540b82295d50dc599f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VelocidaddeZoom: 0.1
 --- !u!1 &1645133579
 GameObject:
   m_ObjectHideFlags: 0
