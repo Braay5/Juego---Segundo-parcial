@@ -25,9 +25,13 @@ public class Jugador : MonoBehaviour
         this.GetComponent<Rigidbody2D>().velocity = new Vector2(VelociadDeMov,this.GetComponent<Rigidbody2D>().velocity.y);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D c1)
     {
         EnElPiso = true;
+        if(c1.tag == "Obstaculo")
+        {
+            GameObject.Destroy(this.gameObject);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
