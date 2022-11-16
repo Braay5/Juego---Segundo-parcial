@@ -17,7 +17,7 @@ public class Jugador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButton(1) && EnElPiso)
+        if(Input.GetMouseButton(0) && EnElPiso)
         {
             this.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, FuerzaDeSalto));
         }

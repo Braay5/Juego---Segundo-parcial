@@ -227,6 +227,8 @@ MonoBehaviour:
   - {fileID: 8626577321672769340, guid: f0cd791b648f64748810373dab38dbf6, type: 3}
   PunteroDeJuego: 0
   LugarSeguroGeneracion: 12
+  TextoDeJuego: {fileID: 1683451216}
+  Perdiste: 0
 --- !u!4 &568991452
 Transform:
   m_ObjectHideFlags: 0
@@ -291,7 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 2
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -488,7 +490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abde4ef6ef53b9548a79cd17f3686b60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FuerzaDeSalto: 30
+  FuerzaDeSalto: 12
   VelociadDeMov: 5
 --- !u!61 &1559173872
 BoxCollider2D:
@@ -499,7 +501,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1559173866}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 9c1e328e9a731924daa30a97582befcc, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -550,8 +552,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -134.67105, y: 116.584564}
-  m_SizeDelta: {x: 234.6579, y: 80.8309}
+  m_AnchoredPosition: {x: 0.8273, y: 108.9482}
+  m_SizeDelta: {x: 645.2261, y: 185.4856}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1683451216
 MonoBehaviour:
@@ -586,7 +588,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Puntaje: 0'
+  m_Text: 'Puntaje:   0'
 --- !u!222 &1683451217
 CanvasRenderer:
   m_ObjectHideFlags: 0
